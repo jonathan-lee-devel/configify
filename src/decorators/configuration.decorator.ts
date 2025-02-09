@@ -1,4 +1,4 @@
-import { ConfigurationRegistry } from '../configuration/configuration.registry';
+import { ConfigurationRegistry } from '../configuration';
 
 /**
  * The configuration metadata
