@@ -14,7 +14,7 @@ describe('ConfigifyModule', () => {
 
   describe('forRootAsync()', () => {
     it('should provide complex .env configuration', async () => {
-      const secret = 'test';
+      const secret = 'test-key';
 
       const file = resolve(process.cwd(), 'test/config/.complex.env');
       const module = await ConfigifyModule.forRootAsync({
@@ -42,7 +42,7 @@ describe('ConfigifyModule', () => {
     });
 
     it('should provide complex yml configuration', async () => {
-      const secret = 'test';
+      const secret = 'secret-id';
 
       const file = resolve(process.cwd(), 'test/config/.complex.yml');
       const module = await ConfigifyModule.forRootAsync({
